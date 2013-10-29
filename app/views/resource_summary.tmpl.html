@@ -3,7 +3,7 @@
     <li role="trait" ng-repeat="trait in resourceSummary.traits()">{{trait}}</li>
   </ul>
   <h2>
-    <span role='segment' ng-repeat='segment in resource.pathSegments'>{{segment}} </span>
+    <span role='segment' ng-repeat='segment in resource.pathSegments'>{{segment.toString()}} </span>
   </h2>
 
   <ul class='byline'>
