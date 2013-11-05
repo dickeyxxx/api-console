@@ -1,10 +1,10 @@
 (function() {
   'use strict';
 
-  RAML.Directives.parameterTable = function() {
+  RAML.Directives.namedParametersDocumentation = function() {
     return {
       restrict: 'E',
-      templateUrl: 'views/parameter_table.tmpl.html',
+      templateUrl: 'views/named_parameters_documentation.tmpl.html',
       replace: true,
       scope: {
         heading: '@',

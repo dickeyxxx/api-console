@@ -87,7 +87,7 @@ describe('API Documentation', function() {
         "API Key",
         "Example",
         "0a724bfa133666c5041019ef5bf5a659",
-      ].map(escapeRegExp).join('\\s+'), "i");
+      ].map(escapeRegExp).join('[\\s\\S]+'), "i");
       expect(header.getText()).toMatch(expectedText);
 
       resource = openResource(1);
